@@ -2,9 +2,9 @@ import React from 'react'
 import { useState } from 'react';
 const Section = ({title,description,isVisible,setIsVisible,visibleSection}) =>{
   return(
-   <div className="border-2 inline-block bg-yellow-100 rounded-2xl p-3 m-5  shadow-lg">
+   <div className="border-2 inline-block text-slate-600 bg-slate-100 rounded-2xl p-3 m-5  shadow-xl">
    <img className="w-80 h-56" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsiXZKmchXUi9urgsmIvYhXConbOj9McfIciGMXgZYclNf1jTxtCRonZUh1gBUSetpLZE&usqp=CAU"/>
-   <h3 className="font-bold ">{title}</h3>
+   <h3 className="font-bold font-mono ">{title}</h3>
    
    {isVisible?
    (<button className=" font-mono" 

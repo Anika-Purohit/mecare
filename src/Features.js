@@ -3,7 +3,7 @@ import FeaturesCard from './FeaturesCard'
 
 const Features = () => {
   return (
-    <div>
+    <div className='font-mono'>
     <FeaturesCard/>
     <FeaturesCard/>
     <FeaturesCard/>
