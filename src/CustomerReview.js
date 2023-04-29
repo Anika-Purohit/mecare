@@ -4,7 +4,7 @@ import CustomerCard from './CustomerCard'
 const CustomerReview = () => {
   
   return (
-  <div className="grid grid-flow-row grid-cols-5">
+  <div className="flex flex-wrap justify-around">
   <CustomerCard/>
   <CustomerCard/>
   <CustomerCard/>

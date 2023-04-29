@@ -7,6 +7,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Treatments from './Treatments';
 import CustomerReview from './CustomerReview';
 import Features from './Features';
+import NewsLetter from './NewsLetter';
+
 const appRouter = createBrowserRouter([{
 path:"/",
 element:<Body/>,
@@ -23,14 +25,20 @@ children:[
   path:"customer",
   element:<CustomerReview/>,
   },
+  {
+    path:"newsletter",
+    element:<NewsLetter/>,
+    },
 ]
 }])
 function App() {
   return (
     <div className="App">
+   
+    <RouterProvider router={appRouter}>
     <Header/>
-    <RouterProvider router={appRouter}></RouterProvider>
     <Footer/>
+    </RouterProvider>
    
     </div>
   );
